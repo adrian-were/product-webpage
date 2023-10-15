@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div class="stick">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav className="navbar navbar-expand-md bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">LOGO</a>
+  <Link className="navbar-brand" to="/">LOGO</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,6 @@ function Navbar() {
         <Link className="nav-link m-3 fs-4" to="/products">Products</Link>
         <a class="nav-link m-3 fs-4" href="#">About</a>
         <a class="nav-link m-3 fs-4" href="#">Contact Us</a>
-        <i class="fab fa-facebook-f" style={{color: '#3B5998'}}></i>
       </div>
     </div>
   </div>
